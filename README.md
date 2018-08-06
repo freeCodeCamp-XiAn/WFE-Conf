@@ -43,3 +43,7 @@ YL联系Miya,争取相关设计图稿，后期可以替换。
 
 **是否展示本次活动组织者名单，待定。**
 
+- https://web-conf.tk/?nsukey=xYC%2Fy%2FEvtginhjd5Pl7IC%2FWuGOoyeD%2FqGv67CK1hOry3j1JRLZ8qzSoPAeymIAs5fjagU2YRUtf8dPxlU5ljVFEHPReneHWo9KW3k8a%2Bv4WoHBNz8MMwPHJt3dQxl3qQpIN5qFVsGqDrromNgPZAKKuhgcakdz1m9UuD4%2FBm59eZxr0ZXcus5Cp21A0YSonUm8XYCNGoahWa7vpoN4pQJg%3D%3D
+- https://gmtc.geekbang.org/
+- http://www.wdshare.org/active/5804779bf0af75643eac14fb#changdi
+
