@@ -2,7 +2,7 @@
   <div class="row">
     <div id="introduce">
       <h2 class="title">
-        <span>{{config.titlezn}}</span>
+        <span>{{config.titlezh}}</span>
         <span>{{config.titlen}}</span>
       </h2>
       <p style="text-indent: 2em">{{config.intro}}</p>

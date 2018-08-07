@@ -5,7 +5,14 @@
       :config = config.confInfo
     >
     </conf-info>
-    <p>{{config.header.a}}</p>
+    <teacher
+      :config = config.teacher.config
+      :lists = config.teacher.lists
+    ></teacher>
+    <time-line
+      :list = config.timeLine
+    >
+    </time-line>
   </div>
 </template>
 
@@ -15,8 +22,8 @@
 import config from '../configTxt'
 import Banner from '@/components/Banner'
 import ConfInfo from '@/components/ConfInfo'
-// import Teacher from '@/components/Teacher'
-// import TimeLine from '@/components/TimeLine'
+import Teacher from '@/components/Teacher'
+import TimeLine from '@/components/TimeLine'
 // import ActivityShow from '@/components/ActivityShow'
 // import PlaceInfo from '@/components/PlaceInfo'
 // import LinkUs from '@/components/LinkUs'
@@ -31,7 +38,8 @@ export default {
   components: {
     Banner,
     ConfInfo,
-    
+    Teacher,
+    TimeLine,
   },
 }
 </script>
