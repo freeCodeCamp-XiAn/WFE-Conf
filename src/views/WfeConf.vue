@@ -2,16 +2,14 @@
   <div>
     <banner></banner>
     <conf-info
-      :config = config.confInfo
-    >
+      :config = config.confInfo>
     </conf-info>
     <teacher
       :config = config.teacher.config
-      :lists = config.teacher.lists
-    ></teacher>
+      :lists = config.teacher.lists>
+      </teacher>
     <time-line
-      :list = config.timeLine
-    >
+      :lists = config.timeLine>
     </time-line>
   </div>
 </template>
