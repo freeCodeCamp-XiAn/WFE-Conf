@@ -2,8 +2,8 @@
   <div id="speaker">
     <div class="row">
         <h2 class="title">
-        <span>{{config.titlezh}}</span>
-        <span>{{config.titlen}}</span>
+          <span>{{config.titlezh}}</span>
+          <span>{{config.titlen}}</span>
       </h2>
     </div>
     <div class="row">

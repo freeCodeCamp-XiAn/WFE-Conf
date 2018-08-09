@@ -1,6 +1,12 @@
 <template>
   <div id="time">
     <div class="row">
+        <h2 class="title">
+        <span>{{config.titlezh}}</span>
+        <span>{{config.titlen}}</span>
+      </h2>
+    </div>
+    <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2 time-line"  :class="{topbor: list.id === 1}" v-for="list in lists" :key="list.id">
           <div class="first-line">
             <span>{{list.time}}</span>
@@ -22,7 +28,7 @@ export default {
       msg: ''
     }
   },
-  props:['lists']
+  props:['lists','config']
 }
 </script>
 
@@ -47,5 +53,23 @@ export default {
   }
   .topbor{
     border-top: 1px solid #665;
+  }
+  .title {
+    margin: 40px auto 20px;
+  }
+  .title span {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+   @media (max-width: 768px){
+    .title {
+        margin: 20px auto 20px;
+        font-size: 18px;
+    }
+    .title span {
+        margin-bottom: 5px;
+    }
   }
 </style>

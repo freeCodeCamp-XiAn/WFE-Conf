@@ -9,7 +9,8 @@
       :lists = config.teacher.lists>
       </teacher>
     <time-line
-      :lists = config.timeLine>
+      :config = config.timeLine.config
+      :lists = config.timeLine.lists>
     </time-line>
   </div>
 </template>
