@@ -9,9 +9,22 @@
       :lists = config.teacher.lists>
       </teacher>
     <time-line
-      :config = config.timeLine.config
+      :config = config.timeLine.config 
       :lists = config.timeLine.lists>
     </time-line>
+    <div v-if="showAs">
+      <activity-show
+        :title = false
+        :lists = config.activityShow>
+      </activity-show>
+    </div>
+    <link-us
+      :config = config.linkUs>
+    </link-us>
+    <place-info
+      :lists = config.placeInfo.lists
+    >
+    </place-info>
   </div>
 </template>
 
@@ -23,15 +36,16 @@ import Banner from '@/components/Banner'
 import ConfInfo from '@/components/ConfInfo'
 import Teacher from '@/components/Teacher'
 import TimeLine from '@/components/TimeLine'
-// import ActivityShow from '@/components/ActivityShow'
-// import PlaceInfo from '@/components/PlaceInfo'
-// import LinkUs from '@/components/LinkUs'
+import ActivityShow from '@/components/ActivityShow'
+import PlaceInfo from '@/components/PlaceInfo'
+import LinkUs from '@/components/LinkUs'
 export default {
   name: 'WfeConf',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      config: config
+      config: config,
+      showAs: true,
     }
   },
   components: {
@@ -39,6 +53,9 @@ export default {
     ConfInfo,
     Teacher,
     TimeLine,
+    ActivityShow,
+    LinkUs,
+    PlaceInfo
   },
 }
 </script>

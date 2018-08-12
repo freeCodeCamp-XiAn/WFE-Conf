@@ -26,9 +26,9 @@ export default {
 <style scoped>
 
     #introduce{
+        width: 80%;
         min-height: 200px;
         height: auto;
-        width: 80%;
         margin: auto;
     }
 

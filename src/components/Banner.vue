@@ -4,7 +4,7 @@
 			<h1>2018西安</h1>
 			<h1>Web前端交流大会</h1>
 			<h3>Learn to Code and ...</h3>
-			<h4></h4>
+			<h4>Lorem ipsum dolor sit amet consectetur  quisquam sequi illum eos necessitatibus, expedita facere tenetur quod fugiat nobis. Aperiam, accusamus magni.</h4>
 		</div>
     </div>
 </template>
@@ -25,12 +25,22 @@ export default {
 .banner-img{
   background: url() repeat ;
 }
-@media screen and( max-width:  768px){
-	.content{
-		padding: 0 2em;
-	}
+.content{
+	background-color: #c54572;
+	color: #fff;
+	min-height: 300px;
+	padding: 30px 0;
+	text-align: center;
 }
-@media screen and( min-width:  768px){
+.content h1{
+	font-size: 42px;
+	margin-top: 25px;
+}
+.content h2{
+	font-size: 30px;
+}
+
+@media screen and( max-width:  768px){
 	.content{
 		padding: 0 2em;
 	}

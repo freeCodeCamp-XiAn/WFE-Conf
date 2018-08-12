@@ -51,7 +51,7 @@ const config = {
         /* 用于区别演讲活动和公共活动 */
         isSpeech: false,
         type: '备注',
-        info: '解放后的康师傅和史蒂夫活动经费的设计发的蝴蝶结费打飞机防静电粉红色接电话'
+        info: '解放后的康师傅和史蒂夫活动经费的设计发的蝴蝶结费打飞机防静电粉红色接电解放后的康师傅和史蒂夫活动经费的设计发的蝴蝶结费打飞机防静电粉红色接电解放后的康师傅和史蒂夫活动经费的设计发的蝴蝶结费打飞机防静电粉红色接电解放后的康师傅和史蒂夫活动经费的设计发的蝴蝶结费打飞机防静电粉红色接电话'
       },
       {
         id: '2',
@@ -82,18 +82,54 @@ const config = {
       }
     ],
     config: {
-      titlezh: '流程安排',
-      titlen: 'TIMELINE'
+      titlen: 'TIMELINE',
+      titlezh: '活动流程'
     }
   },
-  activityShow: {
-    a: '111'
-  },
+  activityShow: [
+    {
+      id: '1',
+      path: '../../static/teacher/guest0.jpeg'
+    },
+    {
+      id: '2',
+      path: '../../static/qrcode/qrcode.jpg'
+    },
+    {
+      id: '3',
+      path: '../../static/qrcode/qrcode.jpg'
+    },
+    {
+      id: '4',
+      path: '../../static/qrcode/qrcode.jpg'
+    }
+  ],
   placeInfo: {
-    a: '111'
+    lists: [
+      {
+        id: '1',
+        path: '../../static/place/changdi-1.jpg'
+      },
+      {
+        id: '2',
+        path: '../../static/place/changdi-1.jpg'
+      },
+      {
+        id: '3',
+        path: '../../static/place/changdi-1.jpg'
+      },
+      {
+        id: '4',
+        path: '../../static/place/changdi-1.jpg'
+      }
+    ],
+    a: ''
   },
   linkUs: {
-    a: '111'
+    titlen: 'LINK US',
+    titlezh: '联系我们',
+    path1: '../../static/qrcode/qrcode.jpg',
+    path2: '../../static/qrcode/qrcode.jpg'
   }
 
 }

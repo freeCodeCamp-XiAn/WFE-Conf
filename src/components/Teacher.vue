@@ -1,9 +1,9 @@
 <template>
   <div id="speaker">
     <div class="row">
-        <h2 class="title">
-          <span>{{config.titlezh}}</span>
-          <span>{{config.titlen}}</span>
+      <h2 class="title">
+        <span>{{config.titlezh}}</span>
+        <span>{{config.titlen}}</span>
       </h2>
     </div>
     <div class="row">
@@ -32,8 +32,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   #speaker{
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
   }
   .title {
     margin: 40px auto 20px;
