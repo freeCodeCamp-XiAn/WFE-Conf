@@ -5,10 +5,7 @@
         <span>{{config.titlezh}}</span>
         <span>{{config.titlen}}</span>
       </h2>
-      <p style="text-indent: 2em">{{config.intro}}</p>
-    </div>
-    <div class="row">
-
+      <p>{{config.intro}}</p>
     </div>
     <activity-show
       :title = true
@@ -19,13 +16,14 @@
 
 <script>
 import ActivityShow from "./ActivityShow";
+// import Map from "./Map";
 export default {
   name: "PlaceInfo",
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
       config: {
-        titlezh: "≥°µÿΩÈ…‹",
+        titlezh: "Âú∫Âú∞‰ªãÁªç",
         titlen: "PLACE INTRO",
         intro:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctl sint labore porro vero sit eos praesentium! Deleniti.intro"
@@ -34,7 +32,8 @@ export default {
   },
   props: ['lists'],
   components: {
-    ActivityShow
+    ActivityShow,
+    // Map
   }
 };
 </script>
@@ -56,6 +55,7 @@ export default {
 p {
   line-height: 26px;
   font-size: 18px;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .title {
@@ -68,6 +68,7 @@ p {
   #place p {
     font-size: 12px;
     line-height: 18px;
+    text-indent: 2em;
   }
 }
 </style>

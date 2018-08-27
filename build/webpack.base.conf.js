@@ -22,7 +22,7 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
   },
   output: {
     path: config.build.assetsRoot,
@@ -77,6 +77,9 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    'BMap': 'BMap'
+  }, 
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-bottom: 30px;">
     <banner></banner>
     <conf-info
       :config = config.confInfo>
@@ -25,6 +25,9 @@
       :lists = config.placeInfo.lists
     >
     </place-info>
+    <div class="row">
+      <div id="map" class="col-xs-8" style="margin:  0 auto;"></div>
+    </div>
   </div>
 </template>
 
@@ -39,6 +42,7 @@ import TimeLine from '@/components/TimeLine'
 import ActivityShow from '@/components/ActivityShow'
 import PlaceInfo from '@/components/PlaceInfo'
 import LinkUs from '@/components/LinkUs'
+// import Map from '@/components/Map'
 export default {
   name: 'WfeConf',
   data () {
@@ -55,11 +59,40 @@ export default {
     TimeLine,
     ActivityShow,
     LinkUs,
-    PlaceInfo
+    PlaceInfo,
+    // Map
   },
+  mounted() {
+    this.ready()
+  },
+  methods: {
+    ready: function() {
+      var map = new BMap.Map('map')
+      var point = new BMap.Point(108.840053, 34.129522)
+      map.centerAndZoom(point, 14)
+      map.addControl(new BMap.MapTypeControl())
+      map.enableScrollWheelZoom(true)
+      map.enableDoubleClickZoom(true)
+      var marker = new BMap.Marker(point)
+      map.addOverlay(marker)
+      map.centerAndZoom(point, 15)
+    }
+  }
 }
 </script>
 
-<style scoped>
 
+<style scoped>
+#map {
+  /* width: 600px; */
+  height: 600px;
+  margin:  0 auto;
+}
+
+@media (max-width: 768px) {
+  #map {
+    /* width: 350px; */
+    height: 350px;
+  }
+}
 </style>

@@ -8,14 +8,14 @@
     </div>
     <div class="row qrcode">
       <div class="col-xs-12 col-md-6 qrcode1">
-        <strong>主板方 FCC XI`AN</strong>
+        <strong> FCC XI`AN</strong>
         <img :src="config.path1" alt="FCC">
-        <p>西安本地公益性前端技术社区，欢迎关注</p>
+        <p>Lorem ipsum dolor sit amet cong elitelit neque et iu</p>
       </div>
       <div class="col-xs-12 col-md-6 qrcode2">
-        <strong>主板方 FCC XI`AN</strong>
+        <strong> FCC XI`AN</strong>
         <img :src="config.path2" alt="FCCdaqun">
-        <p>西安本地公益性前端技术社区，欢迎关注</p>
+        <p>Lorem ipsum dolor sit amet consecteelit neque et iu</p>
       </div>
     </div>
   </div>

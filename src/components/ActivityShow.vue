@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       config: {
-        titlezh: "活动展示",
+        titlezh: "娲诲姩鍦烘櫙",
         titlen: "ACTIVTY SHOW"
       }
     }
