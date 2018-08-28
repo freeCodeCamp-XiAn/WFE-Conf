@@ -7,7 +7,7 @@
       </h2>
     </div>
     <div class="row">
-      <div v-for="list in lists" :key="list.id" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      <div v-for="list in lists" :key="list.id" class="col-xs-12 col-sm-6 col-md-4">
         <div class="teacher">
           <div class="teacher-img" :style="{backgroundImage: 'url(' + list.path + ')'}"></div>
           <h2 class="name">{{list.name}}</h2>

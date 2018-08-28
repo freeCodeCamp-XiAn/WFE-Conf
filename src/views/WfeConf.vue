@@ -48,7 +48,7 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App",
       config: config,
-      showAs: true
+      showAs: false
     };
   },
   components: {
@@ -77,14 +77,13 @@ export default {
       var opts = {
         width: 200,
         height: 100,
-        title: "海底捞王府井店",
+        title: "活动地点",
         enableMessage: true,
         offset:{
           width: 0,
           height: -15
 
-        },
-        message: "亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+        }
       };
       var infoWindow = new BMap.InfoWindow(
         "地址：北京市东城区王府井大街88号乐天银泰百货八层",
@@ -101,7 +100,7 @@ export default {
 <style scoped>
 #map {
   /* width: 600px; */
-  width: 55%;
+  width: 100%;
   height: 600px;
   margin: 0 auto;
 }
@@ -109,7 +108,7 @@ export default {
 @media (max-width: 768px) {
   #map {
     /* width: 350px; */
-    width: 70%;
+    width: 100%;
     height: 350px;
 
   }
