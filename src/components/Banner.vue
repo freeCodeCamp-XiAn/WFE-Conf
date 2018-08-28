@@ -1,11 +1,11 @@
 <template>
     <div class="img-responsive center-block banner-img row">
-		<div class="content">
-			<h1>2018西安</h1>
-			<h1>Web前端交流大会</h1>
-			<h3>Learn to Code and ...</h3>
-			<h4>Lorem ipsum dolor sit amet consectetur  quisquam sequi illum eos necessitatibus, expedita facere tenetur quod fugiat nobis. Aperiam, accusamus magni.</h4>
-		</div>
+		  <div class="content">
+			  <h1>2018 西安</h1>
+			  <h1>Web 前端交流大会</h1>
+        <h3></h3>
+			  <h4>Lorem ipsum dolor sit amet consectetur  quisquam sequi illum eos necessitatibus, expedita facere tenetur quod fugiat nobis. Aperiam, accusamus magni.</h4>
+		  </div>
     </div>
 </template>
 

@@ -7,9 +7,9 @@
     <teacher
       :config = config.teacher.config
       :lists = config.teacher.lists>
-      </teacher>
+    </teacher>
     <time-line
-      :config = config.timeLine.config 
+      :config = config.timeLine.config
       :lists = config.timeLine.lists>
     </time-line>
     <div v-if="showAs">
@@ -75,10 +75,10 @@ export default {
       var marker = new BMap.Marker(point);
       map.addOverlay(marker);
       var opts = {
-        width: 200, 
-        height: 100, 
-        title: "海底捞王府井店", 
-        enableMessage: true, 
+        width: 200,
+        height: 100,
+        title: "海底捞王府井店",
+        enableMessage: true,
         offset:{
           width: 0,
           height: -15
