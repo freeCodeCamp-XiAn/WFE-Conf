@@ -141,7 +141,7 @@ const config = {
         title: '李耀东 - Building blazing fast website with AMP',
         isSpeech: true,
         type: '主题描述',
-        info: '。'
+        info: '李耀东 - Building blazing fast website with AMP李耀东 - Building blazing fast website with AMP李耀东 - Building blazing fast website with AMP李耀东 - Building blazing fast website with AMP'
       },
       {
         id: '11',
@@ -184,14 +184,6 @@ const config = {
       {
         id: '2',
         path: '../../static/place/changdi-1.jpg'
-      },
-      {
-        id: '3',
-        path: '../../static/place/changdi-1.jpg'
-      },
-      {
-        id: '4',
-        path: '../../static/place/changdi-1.jpg'
       }
     ],
     a: ''
@@ -199,8 +191,7 @@ const config = {
   linkUs: {
     titlen: 'LINK US',
     titlezh: '联系我们',
-    path1: '../../static/qrcode/qrcode.jpg',
-    path2: '../../static/qrcode/qrcode.jpg'
+    path: '../../static/fcc-gongzhonghao.jpeg'
   }
 }
 

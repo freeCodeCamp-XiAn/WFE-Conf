@@ -6,16 +6,11 @@
           <span>{{config.titlen}}</span>
         </h2>
     </div>
-    <div class="row qrcode">
-      <div class="col-xs-12 col-md-6 qrcode1">
+    <div class="row">
+      <div class="qrcode">
         <strong> FCC XI`AN</strong>
-        <img :src="config.path1" alt="FCC">
+        <img :src="config.path" alt="FCC">
         <p>Lorem ipsum dolor sit amet cong elitelit neque et iu</p>
-      </div>
-      <div class="col-xs-12 col-md-6 qrcode2">
-        <strong> FCC XI`AN</strong>
-        <img :src="config.path2" alt="FCCdaqun">
-        <p>Lorem ipsum dolor sit amet consecteelit neque et iu</p>
       </div>
     </div>
   </div>
@@ -49,20 +44,20 @@ export default {
   color: #006400;
 }
 .qrcode{
-  margin: auto;
-  width: 800px;
-  overflow: hidden;
+  width: 100%;
+  margin:0 auto;
   text-align: center;
 }
 .qrcode strong {
   
   display: block;
   font-size: 18px;
+  margin-bottom: 8px;
 }
 .qrcode img {
   display: block;
   width: 250px;
-  margin: auto;
+  margin: 0 auto 8px;
 }
 
 
@@ -81,15 +76,8 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
-  .qrcode2{
-    padding-top: 15px;
-  }
   .qrcode strong{
     font-size: 16px;
   }
-  /* .qrcode img{
-    margin: 0;
-    text-align: center;
-  } */
 }
 </style>

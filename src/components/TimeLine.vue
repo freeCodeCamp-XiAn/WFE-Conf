@@ -6,12 +6,21 @@
         <span>{{config.titlen}}</span>
       </h2>
       <div class="col-xs-12 time-line"  :class="{'topbor': list.id == 1}" v-for="list in lists" :key="list.id">
-          <div class="first-line">
+          <!-- <div class="first-line">
             <span>{{list.time}}</span>
             <span :class="{blue: list.isSpeech}">{{list.title}}</span>
           </div>
           <div class="second-line">
-            <span>【{{list.type}}】&nbsp;&nbsp;{{list.info}}</span>
+            <span>【{{list.type}}】&nbsp;&nbsp;{{{list.title}}}</span>
+          </div> -->
+          <div class="line">
+            <div>时间</div> <div>{{list.time}}</div>
+          </div> 
+          <div class="line line2">
+            <div>主题</div> <div class="topic" :class="{blue: list.isSpeech}">{{list.title}}</div>
+          </div>
+          <div class="line">
+            <div>{{list.type}}</div> <div class="topic">{{list.info}}</div>
           </div>
       </div>
     </div>
@@ -39,6 +48,15 @@ export default {
   #time>div{
     padding: 0 15%;
   }
+  .topic{
+    /* overflow:hidden; */
+    /* text-overflow:ellipsis; */
+    white-space:normal;
+  }
+  .line{
+    display: flex;
+    padding-bottom: 10px;
+  }
   .title {
     margin: 40px auto 25px;
   }
@@ -53,21 +71,17 @@ export default {
   }
   .time-line{
     margin: 0 auto;
-    padding: 0;
+    padding: 15px 5% ;
+    border-bottom: 1px solid #665;
   }
   .first-line{
     padding: 30px 0 10px 30px;
     font-size: 18px;
 
   }
-  .first-line>span:nth-child(1){
-    width: 50px;
-  }
-  .second-line{
-    border-bottom: 1px solid #665;
-    padding: 10px 0 15px 78px;
-    font-size: 16px;
-    line-height: 22px;
+  .line>div:nth-child(1){
+    width: 10%;
+    flex-shrink: 0;
   }
   .blue{
     color: blue;
@@ -76,6 +90,9 @@ export default {
     border-top: 1px solid #665;
   }
    @media (max-width: 768px){
+    .time-line{
+      padding: 20px 10px ;
+    }
     .title {
         margin: 20px auto 20px;
         font-size: 18px;
@@ -86,12 +103,9 @@ export default {
     #time>div{
       padding: 0 5px;
     }
-    .first-line{
-      font-size: 14px;
-      line-height: 18px;
-    }
-    .second-line{
-      font-size: 12px;
-    }
+    .line>div:nth-child(1){
+      width: 70px;
+      flex-shrink: 0;
+  }
   }
 </style>

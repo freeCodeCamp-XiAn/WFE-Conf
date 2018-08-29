@@ -7,7 +7,7 @@
       </h2>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6 col-lg-3" v-for="list in lists" :key="list.id">
+      <div class="col-xs-12 col-md-6" v-for="list in lists" :key="list.id">
         <img class="img-responsive act" :src="list.path">
       </div>
     </div>
